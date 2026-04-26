@@ -1,0 +1,466 @@
+<!-- TUGAS INI DIKERJAKAN MURNI TANPA AI DAN DIKETIK MANUAL 100% -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="navetacandra,Dhaniwira" />
+        <title>Tugas Web Dasar - Konversi Unit Pengukuran</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Konversi Unit Pengukuran</h1>
+        </header>
+        <main>
+            <section id="suhu">
+                <div class="judul">Konversi Suhu</div>
+
+                <table class="konversi">
+                    <tbody>
+                        <tr>
+                            <td>Celcius</td>
+                            <td>
+                                <input
+                                    type="number"
+                                    name="celcius"
+                                    id="celcius"
+                                    placeholder="Suhu dalam satuan Celcius"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">
+                                C = (F - 32) / 1.8<br/>
+                                C = K - 273.15<br/>
+                                C = R / 0.8
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fahrenheit</td>
+                            <td>
+                                <input
+                                    type="number"
+                                    name="fahrenheit"
+                                    id="fahrenheit"
+                                    placeholder="Suhu dalam satuan Fahrenheit"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">
+                                F = C * 1.8 + 32<br/>
+                                F = (K - 273.15) * 1.8 + 32<br/>
+                                F = R / 0.8 * 1.8 + 32
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kelvin</td>
+                            <td>
+                                <input
+                                    type="number"
+                                    name="kelvin"
+                                    id="kelvin"
+                                    placeholder="Suhu dalam satuan Kelvin"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">
+                                K = C + 273.15<br/>
+                                K = R / 0.8 + 273.15<br/>
+                                K = (F - 32) / 1.8 + 273.15
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Reamur</td>
+                            <td>
+                                <input
+                                    type="number"
+                                    name="reamur"
+                                    id="reamur"
+                                    placeholder="Suhu dalam satuan Reamur"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">
+                                R = C * 0.8<br/>
+                                R = (F - 32) / 1.8 * 0.8<br/>
+                                R = (K - 273.15) * 0.8
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="jarak">
+                <div class="judul">Konversi Jarak</div>
+
+                <table class="konversi">
+                    <tbody>
+                        <tr>
+                            <td>Milimeter</td>
+                            <td>
+                                <input
+                                    type="number"
+                                    name="milimeter"
+                                    id="milimeter"
+                                    placeholder="Jarak/panjang dalam satuan Milimeter"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">
+                                MM = CM * 10<br/>
+                                MM = M * 1000<br/>
+                                MM = (Ft * 3.28084) * 1000<br/>
+                                MM = KM * 10<sup>6</sup>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Centimeter</td>
+                            <td>
+                                <input
+                                    type="number"
+                                    name="centimeter"
+                                    id="centimeter"
+                                    placeholder="Jarak/panjang dalam satuan Centimeter"
+                                />
+                            </td>
+                        </tr
+                        <tr class="description">
+                            <td colspan="2">
+                                CM = MM / 10<br/>
+                                CM = M * 100<br/>
+                                CM = (Ft * 3.28084) * 100<br/>
+                                CM = KM * 10<sup>5</sup>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Meter</td>
+                            <td>
+                                <input
+                                    type="number"
+                                    name="meter"
+                                    id="meter"
+                                    placeholder="Jarak/panjang dalam satuan Meter"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">
+                                M = MM / 1000<br/>
+                                M = CM / 100<br/>
+                                M = Ft * 3.28084 (<a href="https://www.calculatorsoup.com/calculators/conversions/meters-to-feet.php">Referensi</a>)<br/>
+                                M = KM * 1000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Feet</td>
+                            <td>
+                                <input
+                                    type="number"
+                                    name="feet"
+                                    id="feet"
+                                    placeholder="Jarak/panjang dalam satuan Feet"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">
+                                Ft = (MM / 1000) * 0.3048<br/>
+                                Ft = (CM / 100) * 0.3048<br/>
+                                Ft = M * 0.3048 (<a href="https://www.calculatorsoup.com/calculators/conversions/meters-to-feet.php">Referensi</a>)<br/>
+                                Ft = (KM * 1000) * 0.3048
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kilometer</td>
+                            <td>
+                                <input
+                                    type="number"
+                                    name="kilometer"
+                                    id="kilometer"
+                                    placeholder="Jarak/panjang dalam satuan Kilometer"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">
+                                KM = MM / 10<sup>6</sup><br/>
+                                KM = CM / 10<sup>5</sup><br/>
+                                KM = (Ft / 3.28084) / 1000<br/>
+                                KM = M / 1000
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="volume">
+                <div class="judul">Konversi Volume dan Berat</div>
+
+                <table class="konversi">
+                    <tbody>
+                        <tr>
+                            <td>Mililiter</td>
+                            <td>
+                                <input
+                                    type="number"
+                                    name="mililiter"
+                                    id="mililiter"
+                                    placeholder="Volume dalam satuan Mililiter"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Liter</td>
+                            <td>
+                                <input
+                                    type="number"
+                                    name="liter"
+                                    id="liter"
+                                    placeholder="Volume dalam satuan Liter"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Beras (KG)</td>
+                            <td>
+                                <input
+                                    type="number"
+                                    name="beras_kg"
+                                    id="beras_kg"
+                                    placeholder="Beras dalam satuan Kilogram"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">Massa Beras: 0.753 KG/L</td>
+                        </tr>
+                        <tr>
+                            <td>Tepung (KG)</td>
+                            <td>
+                                <input
+                                    type="number"
+                                    name="tepung_kg"
+                                    id="tepung_kg"
+                                    placeholder="Tepung dalam satuan Kilogram"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">Massa Tepung: 0.59 KG/L</td>
+                        </tr>
+                        <tr>
+                            <td>Air (KG)</td>
+                            <td>
+                                <input
+                                    type="number"
+                                    name="air_kg"
+                                    id="air_kg"
+                                    placeholder="Air dalam satuan Kilogram"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">Massa Air: 1 KG/L</td>
+                        </tr>
+                        <tr>
+                            <td>Susu (KG)</td>
+                            <td>
+                                <input
+                                    type="number"
+                                    name="susu_kg"
+                                    id="susu_kg"
+                                    placeholder="Susu dalam satuan Kilogram"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">Massa Susu: 1.03 KG/L</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="luas">
+                <div class="judul">Konversi Luas</div>
+
+                <table class="konversi">
+                    <tbody>
+                        <tr>
+                           	<td>Meter<sup>2</sup></td>
+                           	<td>
+                                <input
+                                    type="number"
+                                    name="meter_2"
+                                    id="meter_2"
+                                    placeholder="Luas dalam satuan Meter Persegi"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">
+                                M<sup>2</sup> = HA * 10000<br/>
+                                M<sup>2</sup> = A * 100<br/>
+                                M<sup>2</sup> = Bouw * (14.0625 * 500)
+                            </td>
+                        </tr>
+                        <tr>
+                           	<td>Hektar</td>
+                           	<td>
+                                <input
+                                    type="number"
+                                    name="hektar"
+                                    id="hektar"
+                                    placeholder="Luas dalam satuan Hektar"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">
+                                HA = A / 100<br/>
+                                HA = Bouw * (14.0625 * 500) / 10000<br/>
+                                HA = M<sup>2</sup> / 10000
+                            </td>
+                        </tr>
+                        <tr>
+                           	<td>Are</td>
+                           	<td>
+                                <input
+                                    type="number"
+                                    name="are"
+                                    id="are"
+                                    placeholder="Luas dalam satuan Are"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">
+                                A = Bouw * (14.0625 * 500) / 100<br/>
+                                A = M<sup>2</sup> / 100<br/>
+                                A = HA * 100
+                            </td>
+                        </tr>
+                        <tr>
+                           	<td>Bouw/Bahu</td>
+                           	<td>
+                                <input
+                                    type="number"
+                                    name="bouw"
+                                    id="bouw"
+                                    placeholder="Luas dalam satuan Bouw"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">
+                                Bouw = M<sup>2</sup> / (14.0625 * 500)<br/>
+                                Bouw = HA / 10000 / (14.0625 * 500)<br/>
+                                Bouw = A / 100 / (14.0625 * 500)
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="waktu">
+                <div class="judul">Konversi Waktu</div>
+
+                <table class="konversi">
+                    <tbody>
+                        <tr>
+                           	<td>Jam</td>
+                           	<td>
+                                <input type="number" name="jam" id="jam" placeholder="Waktu dalam satuan Jam">
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">
+                                Jam = Menit / 60<br/>
+                                Jam = Detik / 3600
+                            </td>
+                        </tr>
+                        <tr>
+                           	<td>Menit</td>
+                           	<td>
+                                <input type="number" name="menit" id="menit" placeholder="Waktu dalam satuan Menit">
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">
+                                Menit = Detik / 60<br/>
+                                Menit = Jam * 60
+                            </td>
+                        </tr>
+                        <tr>
+                           	<td>Detik</td>
+                           	<td>
+                                <input type="number" name="detik" id="detik" placeholder="Waktu dalam satuan Detik">
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">
+                                Detik = Jam * 3600<br/>
+                                Detik = Menit * 60
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="kalori">
+                <div class="judul">Konversi Kalori</div>
+
+                <table class="konversi">
+                    <tbody>
+                        <tr>
+                           	<td>Lemak (Gram)</td>
+                           	<td>
+                                <input type="number" name="lemak" id="lemak" placeholder="Lemak dalam satuan Gram">
+                            </td>
+                        </tr>
+                        <tr>
+                           	<td>Protein (Gram)</td>
+                           	<td>
+                                <input type="number" name="protein" id="protein" placeholder="Protein dalam satuan Gram">
+                            </td>
+                        </tr>
+                        <tr>
+                           	<td>Karbohidrat (Gram)</td>
+                           	<td>
+                                <input type="number" name="karbohidrat" id="karbohidrat" placeholder="Karbohidrat dalam satuan Gram">
+                            </td>
+                        </tr>
+                        <tr>
+                           	<td>Mineral (Gram)</td>
+                           	<td>
+                                <input type="number" name="mineral" id="mineral" placeholder="Mineral dalam satuan Gram">
+                            </td>
+                        </tr>
+                        <tr>
+                           	<td>Kalori</td>
+                           	<td>
+                                <input type="number" name="kalori" id="kalori" placeholder="Kalori">
+                            </td>
+                        </tr>
+                        <tr class="description">
+                            <td colspan="2">
+                                Lemak: 9 cal/g<br/>
+                                Protein: 4 cal/g<br/>
+                                Karbohidrat: 4 cal/g<br/>
+                                Mineral: 0 cal/g
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer style="text-align: center; padding: 1rem">
+            Built with &lt;3 by Naveta Candra &amp; Dhani Wira
+        </footer>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
