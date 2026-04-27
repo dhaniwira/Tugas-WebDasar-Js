@@ -5,15 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="navetacandra,Dhaniwira" />
         <title>Tugas Web Dasar - Konversi Unit Pengukuran</title>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
         <header>
             <h1>Konversi Unit Pengukuran</h1>
         </header>
         <main>
-            <section id="suhu">
-                <div class="judul">Konversi Suhu</div>
+            <button class="accordion">Mengkonversi Suhu</button>
+            <div class="panel">
+                <di id="suhu">
+                    <div class="judul">Konversi Suhu</div>
 
                 <table class="konversi">
                     <tbody>
@@ -91,10 +93,13 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
             </section>
 
-            <section id="jarak">
-                <div class="judul">Konversi Jarak</div>
+            <button class="accordion">Mengkonversi Jarak</button>
+            <div class="panel">
+                <section id="jarak">
+                    <div class="judul">Konversi Jarak</div>
 
                 <table class="konversi">
                     <tbody>
@@ -127,7 +132,7 @@
                                     placeholder="Jarak/panjang dalam satuan Centimeter"
                                 />
                             </td>
-                        </tr
+                        </tr>
                         <tr class="description">
                             <td colspan="2">
                                 CM = MM / 10<br/>
@@ -195,10 +200,13 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
             </section>
 
-            <section id="volume">
-                <div class="judul">Konversi Volume dan Berat</div>
+            <button class="accordion">Mengkonversi Volume dan Berat</button>
+            <div class="panel">
+                <section id="volume">
+                    <div class="judul">Konversi Volume dan Berat</div>
 
                 <table class="konversi">
                     <tbody>
@@ -282,8 +290,11 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
             </section>
 
+            <button class="accordion">Mengkonversi Luas</button>
+            <div class="panel">
             <section id="luas">
                 <div class="judul">Konversi Luas</div>
 
@@ -363,8 +374,11 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
             </section>
 
+            <button class="accordion">Mengkonversi Waktu</button>
+            <div class="panel">
             <section id="waktu">
                 <div class="judul">Konversi Waktu</div>
 
@@ -408,8 +422,11 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
             </section>
 
+            <button class="accordion">Mengkonversi Kalori</button>
+            <div class="panel">
             <section id="kalori">
                 <div class="judul">Konversi Kalori</div>
 
@@ -442,7 +459,7 @@
                         <tr>
                            	<td>Kalori</td>
                            	<td>
-                                <input type="number" name="kalori_cal" id="kalori_cal" placeholder="Kalori">
+                                <input type="number" name="kalori" id="kalori" placeholder="Kalori">
                             </td>
                         </tr>
                         <tr class="description">
@@ -455,6 +472,7 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
             </section>
         </main>
         <footer style="text-align: center; padding: 1rem">
@@ -462,5 +480,19 @@
         </footer>
 
         <script src="./script.js"></script>
+        <script>
+            const acc = document.getElementsByClassName("accordion");
+            for (let i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    const panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
     </body>
 </html>
