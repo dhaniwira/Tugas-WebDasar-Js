@@ -4,18 +4,18 @@
 h1 {
   text-align: center;
   color: #fcf8f8;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0f172a;
+    background-color: #395db3;
     color: #f6f6f6;
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 main {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -25,25 +25,60 @@ section {
 }
 
 .accordion {
-  background-color: #c9c2c2;
-  color: #000000;
+  background-color: #ffffff;
+  color: #1e293b;         
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  border: none;
+  border: 1px solid #e2e8f0;
   text-align: left;
-  outline: none;
-  font-size: 15px;
+  font-size: 16px;
   transition: 0.4s;
+  font-weight: 550;
 }
 
 .active, .accordion:hover {
-  background-color: #ccc; 
+  background-color: #f1f5f9;
+}
+
+.judul {
+  font-size: 18px;
+  text-decoration: underline;
 }
 
 .panel {
-  padding: 0 18px;
+  padding: 20px;
   display: none;
-  background-color: rgb(66, 66, 66);
+  background-color: #ffffff; 
+  color: #1a1d20;
+  border-top: 1px solid #e2e8f0; 
   overflow: hidden;
+}
+
+.panel table {
+  width: 100%;      
+  border-collapse: collapse;
+}
+
+.panel input, .panel select {
+  width: 100%;             
+  padding: 12px;       
+  margin: 8px 0;
+  border: 1px solid hsl(240, 5%, 70%);
+  border-radius: 6px;     
+  font-size: 14px;
+  box-sizing: border-box; 
+}
+
+.panel input:focus {
+  border-color: #395db3; 
+  outline: none;
+}
+
+tr:not(.description) > td:first-child {
+  font-weight: bold;
+}
+
+td {
+  font-size: 15px;
 }
